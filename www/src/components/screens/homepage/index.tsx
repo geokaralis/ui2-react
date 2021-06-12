@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@components/basics/button'
+import {Button} from 'ui2-components'
 
 export const HomepageScreen = (): JSX.Element => {
   return (

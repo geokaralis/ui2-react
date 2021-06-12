@@ -1,28 +1,11 @@
 {
   "name": "ui2-react",
+  "workspaces": [
+    "packages/*",
+    "www"
+  ],
   "scripts": {
-    "start": "webpack serve",
-    "build": "webpack"
-  },
-  "devDependencies": {
-    "@types/node": "^15.12.2",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.7",
-    "@types/webpack-dev-server": "^3.11.4",
-    "@types/webpack-env": "^1.16.0",
-    "css-loader": "^5.2.6",
-    "esbuild-loader": "^2.13.1",
-    "html-webpack-plugin": "^5.3.1",
-    "sass": "^1.34.1",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^2.0.0",
-    "typescript": "^4.3.2",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "build": "yarn workspace ui2-components build",
+    "start": "yarn build && yarn workspace ui2-www start"
   }
 }
