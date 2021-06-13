@@ -1,4 +1,24 @@
 .Button {
+  appearance: none;
+  margin: 0;
+  padding: 4px 16px;
   display: inline-flex;
-  color: red;
+  color: inherit;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+
+  &___primary {
+    background-color: hsla(204, 96%, 54%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
 }

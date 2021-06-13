@@ -12,6 +12,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": "src",
+    "declaration": true,
+    "declarationDir": "build",
+    "rootDir": "src",
+    "outDir": "build",
     "types": [
       "node",
       "webpack-env"

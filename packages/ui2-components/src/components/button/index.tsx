@@ -1,9 +1,17 @@
 import React from 'react'
 import styles from './index.module.scss'
 
-const Button = (): JSX.Element => {
+interface ButtonProps {
+  label: string
+  variant: 'primary' | 'standard'
+}
+
+const Button = ({
+  label,
+  variant
+}: ButtonProps): JSX.Element => {
   return (
-    <button className={styles.Button}>Button156sdsadsadsa789</button>
+    <button className={`${styles.Button} ${ variant === 'primary' ? styles.Button___primary : ''}`}>{label}</button>
   )
 }
 

@@ -1,11 +1,11 @@
 {
   "name": "ui2-react",
+  "private": true,
   "workspaces": [
     "packages/*",
     "www"
   ],
-  "scripts": {
-    "build": "yarn workspace ui2-components build",
-    "start": "yarn build && yarn workspace ui2-www start"
+  "devDependencies": {
+    "typescript": "^4.3.2"
   }
 }

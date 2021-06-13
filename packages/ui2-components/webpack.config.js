@@ -5,9 +5,9 @@ module.exports = {
   mode: 'production',
   entry: path.join(__dirname, 'src', 'index.ts'),
   output: {
-    filename: '[name].js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'build'),
-    sourceMapFilename: '[name].js.map',
+    sourceMapFilename: 'index.js.map',
     library: 'ui2-components',
     libraryTarget: 'umd',
     clean: true
